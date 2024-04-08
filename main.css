@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #4f6ebe;
+    padding-top: 16px;
+    color: white;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container,
+footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input, 
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}   
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+section {
+    background-color: #ccc;
+    padding-top: 70px;
+}
+
+#produtos,#promocoes {
+    color:  #192a56;
+}
+
+@media screen and (max-width: 640px) {
+
+    header li {
+        display: flex;
+    }
+
+    #sobre img {
+        margin-bottom: 32px;
+        height: 280px;
+    }
+
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+        display: block
+    }
+
+    #sobre img {
+        margin-bottom: 32px;
+        height: 540px;
+    }
+}
+
+

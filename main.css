@@ -57,10 +57,6 @@ section h2 {
     margin-bottom: 16px;
 }
 
-.item-central {
-    margin: 0 5%;
-}
-
 .form-campo {
     margin-bottom: 16px;
 }
@@ -97,7 +93,7 @@ form button {
 }   
 
 form {
-    max-width: 360px;
+    max-width: 720px;
 }
 
 form button {
@@ -123,11 +119,23 @@ footer li img {
 
 section {
     background-color: #ccc;
-    padding-top: 70px;
+    padding-top: 85px;
 }
 
-#produtos,#promocoes {
+#produtos,#promocoes,#contato {
     color:  #192a56;
+}
+
+#produtos h2 {
+    margin-left: 620px;
+}
+
+#promocoes h2 {
+    margin-left: 620px;
+}
+
+.card {
+    margin-bottom: 32px;
 }
 
 @media screen and (max-width: 640px) {
@@ -139,10 +147,23 @@ section {
     #sobre img {
         margin-bottom: 32px;
         height: 280px;
+        margin-left: 5px;
+    }
+
+    #sobre h2, p {
+        margin-left: 5px;
+    }
+
+    #produtos h2 {
+        margin-left: 30px;
+    }
+
+    #promocoes h2 {
+        margin-left: 30px;
     }
 
     .container {
-        max-width: 90%;
+        max-width: 95%;
         display: block;
     }
 }
@@ -150,14 +171,22 @@ section {
 @media screen and (min-width: 641px) and (max-width: 1023px) {
 
     .container {
-        max-width: 90%;
+        max-width: 95%;
         display: block
     }
 
     #sobre img {
         margin-bottom: 32px;
-        height: 540px;
     }
+
+    #produtos h2 {
+        margin-left: 30px;
+    }
+
+    #promocoes h2 {
+        margin-left: 30px;
+    }
+
 }
 
 

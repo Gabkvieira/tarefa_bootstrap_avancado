@@ -27,4 +27,15 @@ $(document).ready(function() {
             }
         }
     })
+
+    $('.lista-produto button').click(function(){
+        const destino = $('#contato');
+        const nomeProduto = $(this).parent().find('h4').text();
+
+        $('#produto-interesse').val(nomeProduto);
+
+        $('html').animate({
+            scrollTop: destino.offset().top
+        }, 1000)
+    })
 })
